@@ -1,13 +1,19 @@
 marks = float(input("Enter your marks : "))
 
-if(marks >= 90):
+if((marks >= 90)and(marks < 101)):
     print("GRADE = A",)
 
-if((marks >= 80)and(marks < 90)):
+elif((marks >= 80)and(marks < 90)):
     print("GRADE = B",)
 
-if((marks >= 70)and(marks < 80)):
+elif((marks >= 70)and(marks < 80)):
     print("GRADE = C",)
 
-if(marks < 70):
+elif((marks >= 0))and(marks < 70):
     print("GRADE = D",)
+
+elif(marks < 0):
+    print("Entered wrong marks",)
+
+elif(marks > 100):
+    print("please enter marks less than or equal to 100",)
